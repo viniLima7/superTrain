@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAV -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
+            SuperTrain
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- CARD CADASTRO -->
+         <div class="container">
+            <h3 class="col-md-4 mx-auto text-center my-3">Preencha os dados e crie sua conta na supertrain!</h3>
+
+            <div class="card">
+                <div class="card-body">
+
+                    <!-- TITULO -->
+                    <h2 class="card-title text-center">Cadastro</h2>
+
+                    <!-- E-MAIL -->
+                    <div class="mb-3">
+                        <label for="emailUsuario" class="form-label mb-0">E-mail</label>
+                        <input type="email" class="form-control" id="emailUsuario" name="">
+                    </div>
+
+                    <!-- SELECT PAÍS -->
+                    <div class="mb-3">
+                        <label for="selectPaisUsuario" class="form-label mb-0">Seu País</label>
+                        <select name="" id="selectPaisUsuario" class="form-select">
+                            <option selected value="brasil">Brasil</option>
+                            <option value="estadosUnidos">Estados Unidos</option>
+                            <option value="russia">Rússia</option>
+                            <option value="Camboja">Camboja</option>
+                        </select>
+                    </div>
+
+                    <!-- SENHA USUÁRIO -->
+                    <div class="mb-3">
+                        <label for="senhaUsuario" class="form-label mb-0">Senha</label>
+                        <input type="password" class="form-control" id="senhaUsuario" name="">
+                    </div>
+
+                    <!-- CONFIRMAÇÃO SENHA -->
+                    <div class="mb-3">
+                        <label for="confirmacaoSenhaUsuario" class="form-label mb-0">Confirme sua senha</label>
+                        <input type="password" class="form-control" id="confirmacaoSenhaUsuario" name="">
+                    </div>
+
+                    <div class="vstack gap-2 col-md-3 mx-auto"><button type="submit" class="btn btn-primary">Cadastrar</button></div>
+                </div>
+            </div>
+         </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
