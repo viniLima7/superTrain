@@ -1,0 +1,47 @@
+body {
+    background-color: #212939;
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    min-height: 80vh;
+    border-radius: 10px;
+}
+
+.welcome-title {
+    color: white;
+    font-family: 'Lovelo', sans-serif;
+}
+
+.supertrain-title {
+    color: #699ec2;
+    font-family: 'Helios Extend', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-card {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-title {
+    font-family: 'Lovelo', sans-serif;
+    font-weight: bold;
+    color: #212939;
+}
+
+.btn-login {
+    background-color: #212939;
+    color: white;
+    border: none;
+}
+
+.btn-login:hover {
+    background-color: #2d3748;
+    color: white;
+}

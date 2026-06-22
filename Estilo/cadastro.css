@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #212939;
+}
+
+.navbar{
+    background-color: #cccad0 !important;
+    font-family: 'Lovelo', sans-serif;
+}
+
+.navbar a {
+    font-weight: 600;
+    color: #454c5e;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    color: #454c5e;
+    font-size: x-large;
+}
+

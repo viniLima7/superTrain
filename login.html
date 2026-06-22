@@ -1,118 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- Bootstrap correto -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://cdnfonts.com" rel="stylesheet" />
-    <link rel="stylesheet" href="login.html">
-    <style>
-      body {
-        background-color: #212939;
-      }
-      .bg-body-tertiary {
-        background-color: #f8f9fa;
-      }
-    </style>
-  </head>
-  <body>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontes -->
+    <link href="https://cdnfonts.com" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="estilo/login.css">
+</head>
+
+<body>
     <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="imagens/logo.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            SuperTrain
-          </a>
-        </div>
-      </nav>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagens/logo.png"
+                        alt="Logo"
+                        width="30"
+                        height="24"
+                        class="d-inline-block align-text-top">
+                    SuperTrain
+                </a>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <div
-        class="container d-flex flex-column align-items-center justify-center p-4"
-        style="min-height: 80vh; border-radius: 10px"
-      >
-        <div class="mb-4 text-center">
-          <h1
-            class="fw-light"
-            style="color: white; font-family: 'Lovelo', sans-serif"
-          >
-            Bem vindo a
-            <span
-              class="fw-black"
-              style="
-                color: #699ec2;
-                font-family: 'Helios Extend', 'Arial Black', sans-serif;
-                font-weight: bold;
-                font-style: italic;
-              "
-              >SUPERTRAIN</span
-            >
-            !
-          </h1>
+        <div class="container d-flex flex-column align-items-center justify-center p-4 login-container">
+            
+            <div class="mb-4 text-center">
+                <h1 class="welcome-title">
+                    Bem vindo a
+                    <span class="supertrain-title">SUPERTRAIN</span>!
+                </h1>
+            </div>
+
+            <div class="card p-4 shadow login-card">
+                <h1 class="text-center login-title">Login</h1>
+
+                <form>
+                    <label for="usuario" class="form-label">Usuário</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="nomeUsuario"
+                        class="form-control mb-3"
+                        placeholder="Usuário"
+                        required>
+
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        class="form-control mb-3"
+                        placeholder="Senha"
+                        required>
+
+                    <button type="submit" class="btn w-100 btn-login">
+                        Entrar
+                    </button>
+
+                    <p class="mb-0 mt-3">Não possui cadastro?</p>
+                    <a href="cadastro.html">Cadastre-se</a>
+                </form>
+            </div>
+
         </div>
-
-        <div
-          class="card p-4 shadow"
-          style="background-color: #ffffff; max-width: 400px; width: 100%"
-        >
-          <h1
-            class="text-center"
-            style="
-              font-family: 'Lovelo', sans-serif;
-              font-weight: bold;
-              color: #212939;
-            "
-          >
-            Login
-          </h1>
-          <form>
-            <label for="usuario" class="form-label">Usuário</label>
-            <input
-              type="text"
-              id="usuario"
-              name="nomeUsuario"
-              class="form-control mb-3"
-              placeholder="Usuário"
-              required
-            />
-
-            <label for="senha" class="form-label">Senha:</label>
-            <input
-              type="password"
-              id="senha"
-              name="senha"
-              class="form-control mb-3"
-              placeholder="Senha"
-              required
-            />
-
-            <button
-              type="submit"
-              class="btn w-100"
-              style="background-color: #212939; color: white; border: none"
-            >
-              Entrar
-            </button>
-
-            <p class="mb-0 mt-3">Não possui cadastro?</p>
-            <a href="cadastro.html">Cadastre-se</a>
-          </form>
-        </div>
-      </div>
     </main>
 
     <footer></footer>
-  </body>
+</body>
 </html>
