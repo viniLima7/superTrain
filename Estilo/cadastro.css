@@ -1,3 +1,4 @@
+/* PADRÃO */
 :root {
     --cor-fundo-claro: #cccad0;
     --cor-texto-claro: #E0DEE4;
@@ -46,8 +47,8 @@ body {
 
 .navbar {
     font-family: 'Horizon', sans-serif;
-    margin: 0.50rem;
-    border-radius: 20px;
+    margin: 0.70rem;
+    border-radius: 10px;
 }
 
 .navbar a {

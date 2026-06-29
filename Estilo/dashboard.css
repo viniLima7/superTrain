@@ -1,0 +1,60 @@
+:root {
+    --cor-fundo-claro: #cccad0;
+    --cor-texto-claro: #E0DEE4;
+    --cor-texo-escuro: #454c5e;
+    --cor-fundo-pagina: #212939;
+    --cor-azul-escuro: #0F396F;
+}
+
+@font-face {
+    font-family: "Horizon";
+    src: url(font/Horizon_Regular.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url(font/Lovelo\ Black.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url(font/Alexandria.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(circle, var(--cor-fundo-pagina) 80%, var(--cor-texo-escuro));
+}
+
+.bg-blur {
+    background: hsla(0, 0%, 66%, 0.15) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,.2);
+}
+
+.navbar {
+    font-family: "Alexandria", sans-serif;
+    margin: 0.70rem;
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.active{
+    color: var(--cor-fundo-pagina) !important;
+}
