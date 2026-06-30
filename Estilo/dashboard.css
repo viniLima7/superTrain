@@ -58,3 +58,28 @@ body {
 .active{
     color: var(--cor-fundo-pagina) !important;
 }
+
+.navbar a:hover {
+    color: var(--cor-fundo-pagina) !important;
+}
+
+.card-bg-blur {
+    background: hsla(0, 0%, 66%, 0) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.082);
+    color: var(--cor-texto-claro);
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: white;
+    --bs-table-border-color: rgba(255,255,255,.15);
+}
+
+.table th,
+.table td {
+    background: transparent !important;
+    color: white;
+}

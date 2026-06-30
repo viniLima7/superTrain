@@ -3,26 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperação de Senha</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-      />
-    <link rel="stylesheet" href="recuperacao.html">
-</head>
-<body>
-    <header>
-      <!-- NAV -->
-      <nav class="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="login.html">
-            <img src="imagens/logo.png" alt="Logo" width="80" height="48" class="d-inline-block align-text-middle"/>SuperTrain</a>
-        </div>
-      </nav>
-    </header>
 
-    ;
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="recuperacao.html">
+
+    <title>Recuperar Senha</title>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar bg-blur">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="login.html">
+                <img src="imagens/logo.png" alt="Logo" width="80" height="48" class="d-inline-block">
+                SuperTrain
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="container col-xxl-5">
+
+        <h3 class="text-center my-5 texto-indicativo">
+            Informe seu e-mail para recuperar sua senha.
+        </h3>
+
+        <div class="card bg-blur">
+
+            <div class="card-body p-5">
+
+                <h2 class="card-title text-center mb-4">
+                    Recuperação de Senha
+                </h2>
+
+                <p class="texto-info text-center mb-4">
+                    Enviaremos um link de redefinição para seu e-mail.
+                </p>
+
+                <div class="mb-4">
+                    <label for="emailRecuperacao" class="form-label mb-1">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="emailRecuperacao"
+                        placeholder="Digite seu e-mail"
+                    >
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button class="btn btn-recuperar">
+                        Enviar Link
+                    </button>
+                </div>
+
+                <div class="text-center">
+
+                    <a href="login.html" class="voltar-login">
+                        Voltar para o Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
 </body>
 </html>

@@ -1,0 +1,180 @@
+:root{
+    --cor-fundo-claro:#cccad0;
+    --cor-texto-claro:#E0DEE4;
+    --cor-texo-escuro:#454c5e;
+    --cor-fundo-pagina:#212939;
+    --cor-azul-escuro:#0F396F;
+}
+
+@font-face{
+    font-family:"Horizon";
+    src:url(font/Horizon_Regular.otf) format(opentype);
+}
+
+@font-face{
+    font-family:"Lovelo";
+    src:url(font/Lovelo\ Black.otf) format(opentype);
+}
+
+@font-face{
+    font-family:"Alexandria";
+    src:url(font/Alexandria.ttf) format(truetype);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background-image: radial-gradient(circle, var(--cor-fundo-pagina) 80%, var(--cor-texo-escuro));
+}
+
+/* Glass */
+
+.bg-blur{
+    background:hsla(0,0%,66%,0.15)!important;
+    backdrop-filter:blur(18px)!important;
+    -webkit-backdrop-filter:blur(18px)!important;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+}
+
+/* Navbar */
+
+.navbar{
+    font-family:"Horizon",sans-serif;
+    margin:.70rem;
+    border-radius:10px;
+}
+
+.navbar a{
+    position:relative;
+    color:var(--cor-texto-claro);
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:var(--cor-fundo-pagina);
+}
+
+.navbar a::after{
+
+    content:"";
+    position:absolute;
+
+    left:0;
+    bottom:3px;
+
+    width:100%;
+    height:2px;
+
+    background:var(--cor-texto-claro);
+
+    transform:scaleX(0);
+    transform-origin:right;
+    transition:.3s;
+}
+
+.navbar a:hover::after{
+
+    transform:scaleX(1);
+    transform-origin:left;
+
+}
+
+/* Texto */
+
+.texto-indicativo{
+
+    font-family:"Horizon",sans-serif;
+    color:var(--cor-texto-claro);
+    font-size:1.1rem;
+
+}
+
+.card{
+
+    font-family:"Alexandria",sans-serif;
+    color:var(--cor-texto-claro);
+
+}
+
+.card-title{
+
+    font-family:"Lovelo",sans-serif;
+
+}
+
+.texto-info{
+
+    color:#d0d0d0;
+    font-size:.95rem;
+
+}
+
+/* Inputs */
+
+.form-control{
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    color:white;
+
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.12);
+    color:white;
+
+    border-color:#75b1ff;
+
+    box-shadow:none;
+
+}
+
+.form-control::placeholder{
+
+    color:#c9c9c9;
+
+}
+
+/* Botão */
+
+.btn-recuperar{
+
+    background:#0F396F;
+    color:white;
+
+    border:1px solid #75b1ff2d;
+
+    transition:.3s;
+
+}
+
+.btn-recuperar:hover{
+
+    background:#174d93;
+    color:white;
+
+}
+
+/* Link */
+
+.voltar-login{
+
+    color:var(--cor-texto-claro);
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.voltar-login:hover{
+
+    color:#8cc2ff;
+
+}
