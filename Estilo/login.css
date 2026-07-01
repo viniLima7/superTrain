@@ -1,5 +1,46 @@
+/* PADRÃO */
+:root {
+    --cor-fundo-claro: #cccad0;
+    --cor-texto-claro: #E0DEE4;
+    --cor-texo-escuro: #454c5e;
+    --cor-fundo-pagina: #212939;
+    --cor-azul-escuro: #0F396F;
+}
+
+@font-face {
+    font-family: "Horizon";
+    src: url(font/Horizon_Regular.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url(font/Lovelo\ Black.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url(font/Alexandria.ttf) format(truetype);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: #212939;
+    background-image: radial-gradient(circle, var(--cor-fundo-pagina) 80%, var(--cor-texo-escuro));
+}
+
+.bg-blur {
+    background: hsla(0, 0%, 66%, 0.15) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,.2);
 }
 
 .bg-body-tertiary {
@@ -17,31 +58,68 @@ body {
 }
 
 .supertrain-title {
-    color: #699ec2;
+    color: var(--cor-azul-escuro);
     font-family: 'Helios Extend', 'Arial Black', sans-serif;
     font-weight: bold;
     font-style: italic;
+    text-decoration: underline 0.5px white;
 }
 
 .login-card {
-    background-color: #ffffff;
+    color: white;
     max-width: 400px;
     width: 100%;
+    font-family: 'Alexandria', sans-serif;
 }
 
 .login-title {
     font-family: 'Lovelo', sans-serif;
     font-weight: bold;
-    color: #212939;
 }
 
 .btn-login {
-    background-color: #212939;
-    color: white;
-    border: none;
+    background-color: #0F396F;
+    color: var(--cor-texto-claro);
+    border: 1px solid #75b1ff2d;
 }
 
 .btn-login:hover {
-    background-color: #2d3748;
+    background-color: var(--cor-fundo-pagina);
     color: white;
+}
+
+.navbar {
+    font-family: 'Horizon', sans-serif;
+    margin: 0.70rem;
+    border-radius: 10px;
+}
+
+.navbar a {
+    position: relative;
+    color: var(--cor-texto-claro);
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--cor-fundo-pagina);
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-texto-claro);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
