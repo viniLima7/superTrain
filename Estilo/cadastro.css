@@ -105,3 +105,19 @@ body {
     color: var(--cor-texto-claro);
     border: 1px solid #75b1ff2d;
 }
+
+.form-control{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    color:white;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+.form-select {
+    background:rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    color: white;
+}

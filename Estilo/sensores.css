@@ -78,3 +78,9 @@ body {
     border: 1px solid #75b1ff2d;
     color: var(--cor-texto-claro);
 }
+
+.form-select {
+    background:rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    color: white;
+}
