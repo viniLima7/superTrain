@@ -62,3 +62,19 @@ body {
 .navbar a:hover {
     color: var(--cor-fundo-pagina) !important;
 }
+
+.container {
+    color: white;
+}
+
+
+.card {
+    color: white;
+    font-family: 'Alexandria', sans-serif;
+}
+
+.btn-salvar-sensor {
+    background-color: #0F396F;
+    border: 1px solid #75b1ff2d;
+    color: var(--cor-texto-claro);
+}

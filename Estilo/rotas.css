@@ -62,3 +62,18 @@ body {
 .navbar a:hover {
     color: var(--cor-fundo-pagina) !important;
 }
+
+.card {
+    font-family: 'Alexandria', sans-serif;
+    color: white;
+}
+
+.container {
+    color: white;
+}
+
+.btn-cadastro {
+    background-color: #0F396F;
+    color: var(--cor-texto-claro);
+    border: 1px solid #75b1ff2d;
+}
